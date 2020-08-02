@@ -1,0 +1,38 @@
+.keypad {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(5, 100px);
+}
+
+.keypad > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid #1F1F1F;
+    outline: none;
+}
+
+.keypad > .number {
+    background-color: #060606;
+}
+
+.keypad > .operator, .C, .DEL {
+    background-color: #131313;
+}
+
+.keypad > .C:hover, .DEL:hover, .operator:hover, .number:hover {
+    background-color: #343434;
+}
+
+.C, .equals {
+    grid-column: span 2;
+}
+
+.equals {
+    background-color: #134369;
+}
+
+.equals:hover {
+    background-color: #036FC4;
+}

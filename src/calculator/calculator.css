@@ -1,0 +1,15 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: normal;
+    color: white;
+}
+
+.calculator-body {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: 400px;
+    grid-template-rows: minmax(120px, auto) 500px;
+  }
